@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Juego Bingo</title>
 </head>
 <body>
 <h1>Juego de bingo</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ZX</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="num : ${lista}">
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
